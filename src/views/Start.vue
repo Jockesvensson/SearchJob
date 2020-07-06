@@ -146,7 +146,7 @@ export default {
         text-decoration: none;
         display: inline-block;
         width: 200px;
-        height: 40px;
+        height: 39px;
         font-size: 16px;
         margin: 10px -1px;
         border-radius: 8px 0px 0px 8px;
@@ -162,7 +162,7 @@ export default {
         font-size: 16px;
         margin: 4px 0px;
         width: 46px;
-        height: 40px;
+        height: 39px;
         border-radius: 0px 8px 8px 0px;
     }
 }
