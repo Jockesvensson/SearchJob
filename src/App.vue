@@ -5,6 +5,9 @@
         <div class="nav-title-home">
           <router-link v-bind:to="'/'"><img src="./assets/logo1.png"></router-link>
         </div>
+        <div class="nav-title-home-small">
+          <router-link v-bind:to="'/'"><img src="./assets/logo2.png"></router-link>
+        </div>
       </div>
     </div>
     <router-view/>
@@ -36,8 +39,19 @@ export default {
 
 .nav-title-home{
   display: inline-block;
-  width: 1100px;
+  // width: 1100px;
   text-align: left;
+}
+@media only screen and (min-width: 351px){
+  .nav-title-home-small{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .nav-title-home{
+    display: none !important;
+  }
 }
 
 </style>

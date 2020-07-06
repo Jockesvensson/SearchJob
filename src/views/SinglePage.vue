@@ -465,4 +465,83 @@ export default {
     }
 }
 
+@media only screen and (max-width: 481px) {
+    #first{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    
+    h3{
+        font-size: 16px;
+    }
+    .right-small {
+        background-color: lightgrey;
+        text-align: left;
+        margin: 30px 0px 15px 0px;
+        padding: 10px 20px;
+        width: 100%;
+        max-height: 280px;
+        display: inline-block;
+    }
+    .left {
+        background-color: lightgrey;
+        text-align: left;
+        margin: 30px 0px 15px 0px;
+        padding: 10px 20px;
+        width: 100%;
+        max-height: 280px;
+        display: inline-block;
+    }
+    #foot-wrapper{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    #first{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .right-small {
+        background-color: lightgrey;
+        text-align: left;
+        margin: 30px 0px 15px 0px;
+        padding: 10px 5px;
+        width: 100%;
+        max-height: 280px;
+        display: inline-block;
+    }
+    .left {
+        background-color: lightgrey;
+        text-align: left;
+        margin: 30px 0px 15px 0px;
+        padding: 10px 20px;
+        width: 100%;
+        max-height: 280px;
+        display: inline-block;
+    }
+    .button-url{
+        font-size: 12px;
+        width: 70px;
+        height: 25px;
+    }
+    #foot-wrapper{
+        font-size: 10px;
+    }
+
+}
+
 </style>

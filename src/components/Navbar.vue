@@ -15,12 +15,20 @@
                         </div>
                     </div>
                     
-                    <div id="test1" class="col-12 col-md-12">
+                    <div id="test2" class="col-12 col-md-12">
                         <div id="nav-search" class="search">
                             <input type="text" class="search-field" @keyup.enter="search" v-model="searchString" placeholder="Skriv t.ex. förskollärare Helsingborg"/>
                             <button class="search-button" @click="search()">
                             <i class="glyphicon glyphicon-search"></i>
                             <span>Sök</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="test3" class="col-12 col-md-12">
+                        <div id="nav-search" class="search">
+                            <input type="text" class="search-field" @keyup.enter="search" v-model="searchString" placeholder="Skriv t.ex. förskollärare Helsingborg"/>
+                            <button class="search-button-small" @click="search()">
+                            <i class="glyphicon glyphicon-search"></i>
                             </button>
                         </div>
                     </div>
@@ -133,6 +141,9 @@ export default {
 #test2{
     background-color: darkblue;
 }
+#test3{
+    background-color: darkblue;
+}
 
 #fill{
     background-color: darkblue;
@@ -225,6 +236,11 @@ export default {
     }
 
 }
+@media only screen and (min-width: 479px) {
+    #test3{
+        display: none !important;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .search-field{
@@ -246,13 +262,14 @@ export default {
     .search-field{
         text-decoration: none;
         display: inline-block;
-        width: 350px;
+        width: 345px;
         height: 49px;
         font-size: 20px;
         margin: 10px -1px;
         border-radius: 8px 0px 0px 8px;
         border: 1px solid white;
     }
+    
   
 }
 @media only screen and (max-width: 554px) {
@@ -271,5 +288,62 @@ export default {
         border-radius: 0px 8px 8px 0px;
     }
 }
+
+@media only screen and (max-width: 479px) {
+    .search-field{
+        text-decoration: none;
+        display: inline-block;
+        width: 235px;
+        height: 49px;
+        font-size: 16px;
+        margin: 10px -1px;
+        border-radius: 8px 0px 0px 8px;
+        border: 1px solid white;
+    }
+    .search-button-small{
+        background-color: lightgreen;
+        border: none;
+        color: darkblue;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 0px;
+        width: 49px;
+        height: 49px;
+        border-radius: 0px 8px 8px 0px;
+    }
+    #test2{
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .search-field{
+        text-decoration: none;
+        display: inline-block;
+        width: 170px;
+        height: 30px;
+        font-size: 12px;
+        margin: 10px -1px;
+        border-radius: 8px 0px 0px 8px;
+        border: 1px solid white;
+    }
+    .search-button-small{
+        background-color: lightgreen;
+        border: none;
+        color: darkblue;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 0px;
+        width: 35px;
+        height: 30px;
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
 
 </style>

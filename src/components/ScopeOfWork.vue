@@ -219,4 +219,35 @@ export default {
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .scopeOfWork-button{
+        font-size: 12px;
+        height: 30px;
+        width: 100px;
+        margin-right: 30px;
+    }
+    .scopeOfWork-wrapper {
+        width: 225px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -131px;
+        top: 14px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 12px;
+    }
+    #scopeOfWork-top{
+        text-align: left;
+        margin: 15px 10px 0px 25px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+}
+
 </style>

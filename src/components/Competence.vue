@@ -243,4 +243,35 @@ export default {
         display: none !important;
     }
 }
+
+@media only screen and (max-width: 300px) {
+    .competence-button{
+        font-size: 12px;
+        height: 30px;
+        width: 100px;
+        margin: -10px 30px 10px 0px;
+    }
+    .competence-wrapper {
+        width: 225px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -131px;
+        top: 14px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 11px;
+    }
+    #competence-top{
+        text-align: left;
+        margin: 15px 10px 0px 6px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+}
 </style>

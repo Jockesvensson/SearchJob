@@ -257,7 +257,7 @@ export default {
     margin: 4px 0px;
     width: 80px;
     height: 50px;
-    border-radius: 6px 6px 6px 6px;
+    border-radius: 10px 10px 10px 10px;
 }
 .occupation-button:hover{
     color: black;
@@ -307,6 +307,54 @@ export default {
         top: 20px;
         z-index: 1000;
         background-color: white;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .occupation-wrapper {
+        width: 275px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -82px;
+        top: 20px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 12px;
+    }
+    #occupation-top{
+        height: 650px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .occupation-button{
+        font-size: 12px;
+        height: 30px;
+        width: 60px;
+        margin-right: 20px;
+    }
+    .occupation-wrapper {
+        width: 225px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -82px;
+        top: 13px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 10px;
+    }
+    #occupation-top{
+        height: 575px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
     }
 }
 </style>

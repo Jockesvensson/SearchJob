@@ -756,7 +756,7 @@
             <div v-if="regionDiv" class="region-container">
                 <div class="region-wrapper">
                     <div class="row">
-                    <div id="region-top" class="col-5 col-xs-5 col-md-5">
+                    <div id="region-top" class="">
                         <p class="title">Län</p>
                         <input type="checkbox" v-model="checkedRegion" true-value="10" false-value="0" @click="showMunicipalityBlekingeDiv()" @change="getTotalAdsRegion()">
                         <label for=heltid>Blekinge län</label><br>
@@ -805,7 +805,7 @@
                             <label for=heltid>Obestämd ort</label><br>
                         </div>
                     </div>
-                    <div v-show="showMunicipalityBlekinge" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityBlekinge" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -820,7 +820,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1083" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Sölvesborg</label><br>
                     </div>
-                    <div v-show="showMunicipalityDalarna" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityDalarna" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -853,14 +853,14 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2039" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Älvdalen</label><br>
                     </div>
-                    <div v-show="showMunicipalityGotland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityGotland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0980" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Gotland</label><br>
                     </div>
-                    <div v-show="showMunicipalityGavleborg" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityGavleborg" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -885,7 +885,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2182" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Söderhamn</label><br>
                     </div>
-                    <div v-show="showMunicipalityHalland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityHalland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -902,7 +902,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1383" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Varberg</label><br>
                     </div>
-                    <div v-show="showMunicipalityJamtland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityJamtland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -923,7 +923,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2380" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Östersund</label><br>
                     </div>
-                    <div v-show="showMunicipalityJonkoping" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityJonkoping" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -954,7 +954,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0683" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Värnamo</label><br>
                     </div>
-                    <div v-show="showMunicipalityKalmar" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityKalmar" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -983,7 +983,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0883" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Västervik</label><br>
                     </div>
-                    <div v-show="showMunicipalityKronoberg" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityKronoberg" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1004,7 +1004,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0765" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Älmhult</label><br>
                     </div>
-                    <div v-show="showMunicipalityNorrbotten" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityNorrbotten" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1037,7 +1037,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2518" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Övertorneå</label><br>
                     </div>
-                    <div v-show="showMunicipalitySkane" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalitySkane" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1108,7 +1108,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1256" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Östra Göinge</label><br>
                     </div>
-                    <div v-show="showMunicipalityStockholm" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityStockholm" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1165,7 +1165,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0117" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Österåker</label><br>
                     </div>
-                    <div v-show="showMunicipalitySodermanland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalitySodermanland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1188,7 +1188,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0428" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Vingåker</label><br>
                     </div>
-                    <div v-show="showMunicipalityUppsala" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityUppsala" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1209,7 +1209,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="0382" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Östhammar</label><br>
                     </div>
-                    <div v-show="showMunicipalityVarmland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityVarmland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1246,7 +1246,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1765" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Årjäng</label><br>
                     </div>
-                    <div v-show="showMunicipalityVasterbotten" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityVasterbotten" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1281,7 +1281,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2463" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Åsele</label><br>
                     </div>
-                    <div v-show="showMunicipalityVasternorrland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityVasternorrland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1300,7 +1300,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="2284" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Örnsköldsvik</label><br>
                     </div>
-                    <div v-show="showMunicipalityVastmanland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityVastmanland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1325,7 +1325,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1980" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Västerås</label><br>
                     </div>
-                    <div v-show="showMunicipalityVastraGotaland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityVastraGotaland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1428,7 +1428,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1407" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Öckerö</label><br>
                     </div>
-                    <div v-show="showMunicipalityOrebro" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityOrebro" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -1457,7 +1457,7 @@
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1880" false-value="0" @change="getTotalAdsMunicipality()">
                         <label for=heltid>Örebro</label><br>
                     </div>
-                    <div v-show="showMunicipalityOstergotland" id="region-right" class="col-6 col-xs-6 col-md-5">
+                    <div v-show="showMunicipalityOstergotland" id="region-right" class="">
                         <p class="title">Kommuner</p>
                         <input type="checkbox" v-model="checkedMunicipality" true-value="1" false-value="0" @change="getTotalAdsRegion()">
                         <label for=heltid>Välj alla kommuner</label><br>
@@ -2248,7 +2248,7 @@ export default {
         padding-right: 18px;
     }
     .region-wrapper {
-        width: 470px;
+        width: 455px;
         border: 1px solid black;
         border-radius: 7px;
         position: absolute;
@@ -2259,7 +2259,7 @@ export default {
     }
     #region-top{
         text-align: left;
-        margin: 15px 10px 0px 10px;
+        margin: 15px 10px 0px 25px;
         height: 465px;
         overflow: auto;
     }
@@ -2269,5 +2269,75 @@ export default {
         height: 465px;
         overflow: auto;
     }
+}
+
+@media only screen and (max-width: 479px) {
+    #region-large{
+        display: none !important;
+    }
+    .region-wrapper {
+        width: 295px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -80px;
+        top: 20px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 10px;
+    }
+    #region-top{
+        text-align: left;
+        margin: 15px 10px 0px 25px;
+        height: 465px;
+        overflow: auto;
+        width: 130px;
+    }
+    #region-right{
+        text-align: left;
+        margin: 15px 10px 0px 2px;
+        height: 465px;
+        overflow: auto;
+        width: 135px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .region-button{
+        font-size: 12px;
+        height: 30px;
+        width: 70px;
+        margin-right: 13px;
+    }
+    .region-wrapper {
+        width: 220px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -85px;
+        top: 14px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 12px;
+    }
+    #region-top{
+        text-align: left;
+        margin: 15px 10px 0px 25px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    #region-right{
+        text-align: left;
+        margin: 15px 10px 0px 25px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+
 }
 </style>

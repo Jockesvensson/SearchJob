@@ -60,6 +60,19 @@
           <i class="glyphicon glyphicon-chevron-right"></i>
         </button>
       </div>
+
+      <div class="pagination-container-small" v-show="this.TotalPages > 1">
+        <button class="page-button" @click="prevPage()" :disabled="isDisabledPrev">
+          <i class="glyphicon glyphicon-chevron-left"></i>
+        </button>
+        <button type="button" class="pageNumber-button" v-for="(pageNumber, i) in TotalPages" :key="i" :class="{active: i === activeItem}" @click="page = pageNumber, selectedItem(i)" @click.prevent="goTop()">
+         {{pageNumber}}
+        </button>
+        <button class="page-button" @click="nextPage()" :disabled="isDisabledNext">
+          <i class="glyphicon glyphicon-chevron-right"></i>
+        </button>
+      </div>
+
       <div v-show="jobList.length > 0" class="info">
         <p v-if="jobList.length < 25" >Visar {{lowestNumber + '-' + highestNumber1}} av {{jobList.length}} <span v-if="jobList.length > 100">(100 st)</span> annonser</p>
         <p v-else>Visar {{lowestNumber + '-' + highestNumber}} av {{totalList.value}} <span v-if="totalList.value > 100">(100 st)</span> annonser</p>
@@ -214,7 +227,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 button:disabled{
   opacity: 0.6;
 }
@@ -228,8 +241,9 @@ button:disabled{
 }
 .zero-hits-wrapper {
   background-color: white;
-  width: 1100px;
+  /* width: 1100px; */
   height: 250px;
+  width: 100%;
   display: inline-block;
 }
 .zero-hits-title{
@@ -317,4 +331,113 @@ button:disabled{
       height: 160px;
   }
 }
+
+@media only screen and (max-width: 1050px) {
+  #card-body{
+    h3{
+      font-size: 18px;
+    }
+    h4{
+      font-size: 15px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  #total-ads{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 482px) {
+  .pagination-container-small{
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .zero-hits-title{
+    padding: 10px 0px 0px 20px;
+  }
+  .zero-hits-text{
+      padding: 0px 10px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  #card-body{
+    h3{
+      font-size: 16px;
+    }
+    h4{
+      font-size: 13px;
+    }
+    p{
+      font-size: 11px;
+    }
+  }
+  #total-ads{
+    font-size: 24px;
+  }
+  .info{
+    font-size: 12px;
+  }
+  .pageNumber-button{
+  width: 40px;
+  height: 40px;
+  margin: 0px 2px;
+  font-size: 12px;
+  }
+  .page-button{
+    width: 40px;
+    height: 40px;
+    margin: 20px 2px 0px 2px;
+    font-size: 12px;
+  }
+  .pagination-container{
+    display: none !important;
+  }
+  .zero-hits-title{
+    padding: 10px 0px 0px 20px;
+  }
+  .zero-hits-text{
+      padding: 0px 10px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  #card-body{
+    h3{
+      font-size: 13px;
+    }
+    h4{
+      font-size: 11px;
+    }
+    p{
+      font-size: 8px;
+    }
+  }
+  #total-ads{
+    font-size: 20px;
+  }
+  .info{
+    font-size: 10px;
+  }
+  .pageNumber-button{
+  width: 30px;
+  height: 30px;
+  margin: 0px 2px;
+  font-size: 10px;
+  }
+  .page-button{
+    width: 30px;
+    height: 30px;
+    margin: 10px 2px 0px 2px;
+    font-size: 10px;
+  }
+  .pagination-container{
+    display: none !important;
+  }
+}
+
 </style>

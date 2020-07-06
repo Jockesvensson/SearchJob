@@ -238,4 +238,36 @@ export default {
         display: none !important;
     }
 }
+
+@media only screen and (max-width: 300px) {
+    .published-button{
+        font-size: 12px;
+        height: 30px;
+        width: 95px;
+        margin-right: 40px;
+        /* margin: -10px 40px -10px 0px; */
+    }
+    .published-wrapper {
+        width: 225px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -62px;
+        top: -16px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 12px;
+    }
+    #published-top{
+        text-align: left;
+        margin: 15px 10px 0px 25px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+}
 </style>

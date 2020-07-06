@@ -219,4 +219,41 @@ export default {
         display: none !important;
     }
 }
+@media only screen and (max-width: 479px) {
+    .employmentType-wrapper{
+        width: 305px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .employmentType-button{
+        font-size: 12px;
+        height: 30px;
+        width: 135px;
+        /* margin-right: 40px; */
+        margin: 15px 42px 0px 0px;
+    }
+    .employmentType-wrapper {
+        width: 225px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: absolute;
+        left: -86px;
+        top: -12px;
+        z-index: 1000;
+        background-color: white;
+        font-size: 9px;
+    }
+    #employmentType-top{
+        text-align: left;
+        margin: 15px 10px 0px 6px;
+        height: 465px;
+        overflow: auto;
+        width: 200px;
+    }
+    .button-show{
+        width: 160px;
+        font-size: 14px;
+    }
+}
 </style>
