@@ -5,6 +5,8 @@ Jag har inte fått till allt i denna version, så kommer förhoppningsvis uppdat
 
 Delen 'region' och till viss del 'occupation' har jag fått lov att hårdkoda mer eller mindre i denna version. Förstod inte riktigt hur jag skulle få fram datan och para ihop den när jag endast får de första 100 träffarna av apin. 
 
+https://searchjob-9c000.web.app/
+
 ## Project setup
 ```
 npm install
